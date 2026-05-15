@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Dental Care | Luxury Wellness & Elite Dentistry</title>
+    <meta name="description" content="Experience world-class dental care at Aura Dental Care. Specializing in Orthodontics, Oral Surgery, and Periodontics in a premium, patient-first environment.">
+    
+    <!-- Typography: Playfair Display (Serif) & Inter (Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Mega Menu -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-mark">A</span>
+                <span class="logo-text">Aura<br><small>Dental Care</small></span>
+            </a>
+
+            <nav class="desktop-nav">
+                <ul class="nav-list">
+                    <li><a href="#philosophy" class="nav-link">Our Practice</a></li>
+                    
+                    <!-- Mega Menu Dropdown -->
+                    <li class="nav-item-has-mega">
+                        <a href="#departments" class="nav-link">Specialties <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-grid">
+                                <div class="mega-col">
+                                    <h4>Cosmetic & Restorative</h4>
+                                    <ul>
+                                        <li><a href="#">Porcelain Veneers</a></li>
+                                        <li><a href="#">Dental Implants</a></li>
+                                        <li><a href="#">Full Mouth Reconstruction</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col">
+                                    <h4>Specialized Care</h4>
+                                    <ul>
+                                        <li><a href="#">Orthodontics (Invisalign)</a></li>
+                                        <li><a href="#">Periodontics (Gum Therapy)</a></li>
+                                        <li><a href="#">Oral & Maxillofacial Surgery</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col mega-featured">
+                                    <img src="images/tech-scanner.jpg" alt="Advanced Imaging">
+                                    <div class="featured-content">
+                                        <p>Discover our 3D Digital Workflow for precise, painless procedures.</p>
+                                        <a href="#technology" class="btn-text">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li><a href="#doctors" class="nav-link">Specialists</a></li>
+                    <li><a href="#portal" class="nav-link">Patient Portal</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#booking" class="btn btn-outline">Request Appointment</a>
+                <a href="tel:+18005550199" class="btn btn-emergency"><i class="fa-solid fa-phone"></i> Emergency Care</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with subtle parallax -->
+    <section class="hero">
+        <!-- New Bespoke Architectural Lobby Photo -->
+        <div class="hero-bg" style="background-image: url('images/aura-hero.jpg');"></div>
+        <div class="hero-content container">
+            <h1 class="fade-up">The Pinnacle of <br>Clinical Excellence.</h1>
+            <p class="fade-up delay-1">Precision, aesthetics, and uncompromising care. Welcome to the future of elite dentistry.</p>
+            <div class="fade-up delay-2 mt-2">
+                <a href="#booking" class="btn btn-primary">Begin Your Journey</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Portal Integration Blocks -->
+    <section id="portal" class="portal-section section-padding">
+        <div class="container">
+            <div class="portal-grid">
+                <div class="portal-block reveal-up delay-1">
+                    <i class="fa-regular fa-id-card portal-icon"></i>
+                    <h3>New Patient Registration</h3>
+                    <p>Complete your intake forms securely before your visit.</p>
+                    <a href="#" class="btn-text">Register Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="portal-block reveal-up delay-2">
+                    <i class="fa-solid fa-shield-halved portal-icon"></i>
+                    <h3>Insurance Verification</h3>
+                    <p>Upload your details for a complimentary coverage check.</p>
+                    <a href="#" class="btn-text">Verify Benefits <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="portal-block reveal-up delay-3">
+                    <i class="fa-solid fa-file-invoice-dollar portal-icon"></i>
+                    <h3>Secure Bill Pay</h3>
+                    <p>Manage your invoices and payment plans easily.</p>
+                    <a href="#" class="btn-text">Access Billing <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION A: The Aura Philosophy -->
+    <section id="philosophy" class="philosophy-section section-padding bg-light">
+        <div class="container">
+            <div class="philosophy-grid">
+                <div class="philosophy-content reveal-left">
+                    <span class="section-subtitle">Our Ethos</span>
+                    <h2 class="section-title">The Aura Philosophy</h2>
+                    <p>At Aura Dental Care, we believe that true luxury lies in absolute peace of mind. We have redefined the dental experience to prioritize your comfort, integrating biomimetic principles that preserve your natural tooth structure.</p>
+                    <ul class="feature-list mt-2">
+                        <li><i class="fa-solid fa-shield-virus"></i> Strict Hospital-Grade Sterilization Protocols</li>
+                        <li><i class="fa-solid fa-spa"></i> Calming, Spa-Like Patient Environments</li>
+                        <li><i class="fa-solid fa-tooth"></i> Biomimetic & Minimally Invasive Techniques</li>
+                    </ul>
+                </div>
+                <div class="philosophy-image reveal-right">
+                    <img src="images/aura-philosophy.jpg" alt="Aura Clinic Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION B: Specialized Departments -->
+    <section id="departments" class="departments-section section-padding">
+        <div class="container text-center reveal-up">
+            <h2 class="section-title">Specialized Departments</h2>
+            <p class="section-desc">Comprehensive excellence across all major dental disciplines, under one roof.</p>
+            
+            <div class="dept-grid mt-2">
+                <div class="dept-card reveal-up delay-1">
+                    <div class="dept-icon-wrapper"><i class="fa-solid fa-tooth dept-icon"></i></div>
+                    <h3>Implantology</h3>
+                    <p>Permanent, natural-looking tooth replacement using 3D guided surgical placement.</p>
+                </div>
+                <div class="dept-card reveal-up delay-2">
+                    <div class="dept-icon-wrapper"><i class="fa-solid fa-user-doctor dept-icon"></i></div>
+                    <h3>Periodontics</h3>
+                    <p>Advanced gum therapy, grafting, and foundational health restoration.</p>
+                </div>
+                <div class="dept-card reveal-up delay-3">
+                    <div class="dept-icon-wrapper"><i class="fa-solid fa-face-smile dept-icon"></i></div>
+                    <h3>Prosthodontics</h3>
+                    <p>Masterful reconstruction including veneers, crowns, and full-mouth rehabilitations.</p>
+                </div>
+                <div class="dept-card reveal-up delay-4">
+                    <div class="dept-icon-wrapper"><i class="fa-solid fa-child dept-icon"></i></div>
+                    <h3>Pediatric Care</h3>
+                    <p>Gentle, preventative dentistry for our youngest patients in a comforting setting.</p>
+                </div>
+                <div class="dept-card reveal-up delay-5">
+                    <div class="dept-icon-wrapper"><i class="fa-solid fa-bed dept-icon"></i></div>
+                    <h3>Sedation Dentistry</h3>
+                    <p>IV and conscious sedation options for a completely anxiety-free experience.</p>
+                </div>
+                <div class="dept-card reveal-up delay-6">
+                    <div class="dept-icon-wrapper"><i class="fa-solid fa-briefcase-medical dept-icon"></i></div>
+                    <h3>Emergency Care</h3>
+                    <p>Priority scheduling and rapid relief for acute dental trauma or severe pain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialist Directory -->
+    <section id="doctors" class="specialists-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Clinical Leadership</h2>
+                <p class="section-desc">Our board-certified specialists bring decades of exclusive focus to complex dental challenges.</p>
+            </div>
+            
+            <div class="specialist-grid">
+                <!-- Specialist 1 -->
+                <div class="specialist-card reveal-up delay-1">
+                    <div class="specialist-img-wrap">
+                        <img src="images/dr-surgery.jpg" alt="Dr. Julian Vance" class="specialist-img">
+                        <div class="specialist-hover-overlay">
+                            <button class="btn btn-primary" onclick="document.getElementById('booking').scrollIntoView();">Book with Dr. Vance</button>
+                        </div>
+                    </div>
+                    <div class="specialist-info">
+                        <h3>Dr. Julian Vance</h3>
+                        <span class="specialty-tag">Oral & Maxillofacial Surgery</span>
+                        <p class="credentials">DMD, FACS - Harvard School of Dental Medicine</p>
+                    </div>
+                </div>
+
+                <!-- Specialist 2 -->
+                <div class="specialist-card reveal-up delay-2">
+                    <div class="specialist-img-wrap">
+                        <img src="images/dr-ortho.jpg" alt="Dr. Elena Rostova" class="specialist-img">
+                        <div class="specialist-hover-overlay">
+                            <button class="btn btn-primary" onclick="document.getElementById('booking').scrollIntoView();">Book with Dr. Rostova</button>
+                        </div>
+                    </div>
+                    <div class="specialist-info">
+                        <h3>Dr. Elena Rostova</h3>
+                        <span class="specialty-tag">Orthodontics & Dentofacial Orthopedics</span>
+                        <p class="credentials">DDS, MS - Columbia University</p>
+                    </div>
+                </div>
+
+                <!-- Specialist 3 -->
+                <div class="specialist-card reveal-up delay-3">
+                    <div class="specialist-img-wrap">
+                        <img src="images/dr-perio.jpg" alt="Dr. Marcus Chen" class="specialist-img">
+                        <div class="specialist-hover-overlay">
+                            <button class="btn btn-primary" onclick="document.getElementById('booking').scrollIntoView();">Book with Dr. Chen</button>
+                        </div>
+                    </div>
+                    <div class="specialist-info">
+                        <h3>Dr. Marcus Chen</h3>
+                        <span class="specialty-tag">Periodontics & Implantology</span>
+                        <p class="credentials">DMD, PhD - UCSF School of Dentistry</p>
+                    </div>
+                </div>
+
+                <!-- Specialist 4 -->
+                <div class="specialist-card reveal-up delay-4">
+                    <div class="specialist-img-wrap">
+                        <img src="images/dr-peds.jpg" alt="Dr. Sophia Sterling" class="specialist-img">
+                        <div class="specialist-hover-overlay">
+                            <button class="btn btn-primary" onclick="document.getElementById('booking').scrollIntoView();">Book with Dr. Sterling</button>
+                        </div>
+                    </div>
+                    <div class="specialist-info">
+                        <h3>Dr. Sophia Sterling</h3>
+                        <span class="specialty-tag">Pediatric Dentistry</span>
+                        <p class="credentials">DDS - Boston University</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Technology Suite (Horizontal Scroller) -->
+    <section id="technology" class="technology-section section-padding">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">The Technology Suite</h2>
+                <p class="section-desc">Investing in precision. Our facility integrates the most advanced diagnostic and surgical technologies available globally.</p>
+            </div>
+        </div>
+        
+        <div class="tech-scroller-wrapper reveal-up delay-1">
+            <button class="scroll-btn scroll-left" id="tech-scroll-left" aria-label="Scroll Left"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="tech-scroller" id="tech-scroller">
+                <div class="tech-card">
+                    <img src="images/tech-imaging.jpg" alt="CBCT Scanner">
+                    <div class="tech-card-content">
+                        <h3>3D CBCT Imaging</h3>
+                        <p>High-resolution volumetric imaging for precise implant placement and surgical planning.</p>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <img src="images/tech-scanner.jpg" alt="Intraoral Scanner">
+                    <div class="tech-card-content">
+                        <h3>Digital Impression Systems</h3>
+                        <p>Goo-free, rapid digital mapping of your dentition for crowns and clear aligners.</p>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <img src="images/tech-laser.jpg" alt="Dental Laser">
+                    <div class="tech-card-content">
+                        <h3>Waterlase iPlus</h3>
+                        <p>Minimally invasive laser dentistry for virtually painless cavity prep and periodontal treatment.</p>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <img src="images/tech-lab.jpg" alt="In-house Lab">
+                    <div class="tech-card-content">
+                        <h3>In-House Ceramic Lab</h3>
+                        <p>Same-day crowns and custom shade matching crafted by master ceramists on-site.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="scroll-btn scroll-right" id="tech-scroll-right" aria-label="Scroll Right"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <!-- NEW SECTION C: Patient Journey Timeline -->
+    <section id="journey" class="journey-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h2 class="section-title">Your Aura Journey</h2>
+                <p class="section-desc">A transparent, guided path to your optimal oral health.</p>
+            </div>
+            
+            <div class="timeline-container mt-2">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item reveal-up delay-1">
+                    <div class="timeline-dot">1</div>
+                    <div class="timeline-content">
+                        <h3>Initial Consultation</h3>
+                        <p>Comprehensive 3D imaging, digital scanning, and a one-on-one discussion of your goals in a relaxed environment.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal-up delay-2">
+                    <div class="timeline-dot">2</div>
+                    <div class="timeline-content">
+                        <h3>Bespoke Treatment Plan</h3>
+                        <p>Our specialists collaborate to design a phased, customized roadmap tailored strictly to your clinical needs.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal-up delay-3">
+                    <div class="timeline-dot">3</div>
+                    <div class="timeline-content">
+                        <h3>Clinical Execution</h3>
+                        <p>Experience your procedure in our luxury suites with advanced pain-management protocols and noise-canceling headphones.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal-up delay-4">
+                    <div class="timeline-dot">4</div>
+                    <div class="timeline-content">
+                        <h3>Post-Care & Maintenance</h3>
+                        <p>Dedicated follow-ups and a customized preventative plan to protect your investment for life.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Booking Engine (Multi-Step Form) -->
+    <section id="booking" class="booking-section section-padding bg-navy">
+        <div class="container booking-container">
+            <div class="booking-content reveal-left">
+                <h2>Secure Your Appointment</h2>
+                <p>Select your required specialty, choose a clinician, and find a time that seamlessly integrates with your schedule.</p>
+            </div>
+            <div class="booking-form-wrapper reveal-right">
+                
+                <!-- Step Indicator -->
+                <div class="step-indicator">
+                    <div class="step active" data-step="1">1. Specialty</div>
+                    <div class="step" data-step="2">2. Doctor</div>
+                    <div class="step" data-step="3">3. Time</div>
+                </div>
+
+                <form id="multiStepForm" class="multi-step-form">
+                    
+                    <!-- Step 1: Specialty -->
+                    <div class="form-step active" id="step-1">
+                        <h3>What type of care do you need?</h3>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="specialty" value="General">
+                                <span class="option-content">General Consultation</span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="specialty" value="Orthodontics">
+                                <span class="option-content">Orthodontics</span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="specialty" value="Surgery">
+                                <span class="option-content">Oral Surgery</span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="specialty" value="Implants">
+                                <span class="option-content">Implants / Perio</span>
+                            </label>
+                        </div>
+                        <div class="form-actions right">
+                            <button type="button" class="btn btn-primary next-btn">Next Step <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Doctor -->
+                    <div class="form-step" id="step-2">
+                        <h3>Select a Specialist</h3>
+                        <div class="options-grid" id="doctorOptions">
+                            <!-- Populated by JS based on Step 1, or show all -->
+                            <label class="option-card doctor-option">
+                                <input type="radio" name="doctor" value="Vance">
+                                <span class="option-content">Dr. Julian Vance</span>
+                            </label>
+                            <label class="option-card doctor-option">
+                                <input type="radio" name="doctor" value="Rostova">
+                                <span class="option-content">Dr. Elena Rostova</span>
+                            </label>
+                            <label class="option-card doctor-option">
+                                <input type="radio" name="doctor" value="Any" checked>
+                                <span class="option-content">First Available</span>
+                            </label>
+                        </div>
+                        <div class="form-actions split">
+                            <button type="button" class="btn btn-outline prev-btn"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                            <button type="button" class="btn btn-primary next-btn">Next Step <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Date & Details -->
+                    <div class="form-step" id="step-3">
+                        <h3>Finalize Details</h3>
+                        <div class="input-group">
+                            <label>Preferred Date</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Patient Full Name</label>
+                            <input type="text" placeholder="e.g. Jane Doe" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Contact Email</label>
+                            <input type="email" placeholder="jane@example.com" required>
+                        </div>
+                        <div class="form-actions split">
+                            <button type="button" class="btn btn-outline prev-btn"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                            <button type="submit" class="btn btn-primary">Confirm Booking</button>
+                        </div>
+                    </div>
+
+                    <!-- Success State (Hidden initially) -->
+                    <div class="form-success" id="form-success">
+                        <i class="fa-solid fa-check-circle success-icon"></i>
+                        <h3>Request Confirmed</h3>
+                        <p>Our concierge team will reach out shortly to finalize your appointment.</p>
+                        <button type="button" class="btn btn-outline" onclick="location.reload()">Book Another</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Slider -->
+    <section class="testimonial-section section-padding bg-light">
+        <div class="container text-center reveal-up">
+            <h2 class="section-title">Patient Experiences</h2>
+            
+            <div class="testimonial-slider-container">
+                <div class="testimonial-slider" id="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <blockquote>"The aesthetic results of my full mouth reconstruction are breathtaking. Dr. Vance and the team operate at a level of precision and luxury I didn't know existed in dentistry."</blockquote>
+                        <div class="author-info">
+                            <strong>Victoria R.</strong>
+                            <span class="verified-badge"><i class="fa-solid fa-shield-check"></i> Verified Patient</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <blockquote>"From the calming waiting lounge to the state-of-the-art 3D imaging, every aspect of Aura feels premium. Highly recommend Dr. Rostova for adult orthodontics."</blockquote>
+                        <div class="author-info">
+                            <strong>Jonathan M.</strong>
+                            <span class="verified-badge"><i class="fa-solid fa-shield-check"></i> Verified Patient</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider Controls -->
+                <div class="slider-dots" id="slider-dots">
+                    <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+                    <button class="dot" data-index="1" aria-label="Slide 2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Hub (Blog) -->
+    <section class="education-section section-padding">
+        <div class="container">
+            <div class="section-header flex-header reveal-up">
+                <div>
+                    <h2 class="section-title">Dental Wellness Hub</h2>
+                    <p class="section-desc">Insights and editorials curated by our clinical directors.</p>
+                </div>
+                
+                <!-- Category Filters -->
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="cosmetic">Cosmetic</button>
+                    <button class="filter-btn" data-filter="surgical">Surgical</button>
+                </div>
+            </div>
+
+            <div class="blog-grid" id="blog-grid">
+                <article class="blog-card cosmetic reveal-up delay-1">
+                    <img src="images/blog-1.jpg" alt="Aesthetics">
+                    <div class="blog-card-content">
+                        <span class="blog-category">Cosmetic</span>
+                        <h3><a href="#">The Art of the Porcelain Veneer</a></h3>
+                        <p>Understanding the difference between mass-produced ceramics and custom lab-crafted restorations.</p>
+                    </div>
+                </article>
+                <article class="blog-card surgical reveal-up delay-2">
+                    <img src="images/blog-3.jpg" alt="Implants">
+                    <div class="blog-card-content">
+                        <span class="blog-category">Surgical</span>
+                        <h3><a href="#">Demystifying Dental Implants</a></h3>
+                        <p>How 3D imaging and robotic assistance are making implant surgery safer and faster.</p>
+                    </div>
+                </article>
+                <article class="blog-card cosmetic reveal-up delay-3">
+                    <img src="images/blog-2.jpg" alt="Prevention">
+                    <div class="blog-card-content">
+                        <span class="blog-category">Cosmetic</span>
+                        <h3><a href="#">Invisalign vs. Traditional Methods</a></h3>
+                        <p>An objective analysis by Dr. Elena Rostova on modern orthodontic approaches.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Location Map -->
+    <section class="location-section">
+        <div class="map-container">
+            <!-- OpenStreetMap Standard Embed -->
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=77.1990%2C28.6039%2C77.2190%2C28.6239&amp;layer=mapnik&amp;marker=28.6139%2C77.2090" width="100%" height="450" style="border:0; filter: grayscale(80%) sepia(20%) hue-rotate(80deg) opacity(0.9);" allowfullscreen="" loading="lazy"></iframe>
+            
+            <div class="map-overlay-card reveal-up">
+                <h3>Aura Campus</h3>
+                <p><i class="fa-solid fa-location-dot"></i> A-14, Inner Circle, Connaught Place<br>New Delhi, Delhi 110001</p>
+                <div class="parking-info mt-2">
+                    <strong><i class="fa-solid fa-square-parking"></i> Valet Parking Available</strong>
+                    <p>Complimentary for surgical patients. Enter via Radial Road 4.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-navy">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <span class="logo-mark">A</span>
+                    <span class="logo-text">Aura<br><small>Dental Care</small></span>
+                </a>
+                <p class="mt-2 text-muted">Redefining the standard of care in global dentistry.</p>
+            </div>
+            
+            <div class="footer-links-col">
+                <h4>Clinical</h4>
+                <ul>
+                    <li><a href="#">Cosmetic Dentistry</a></li>
+                    <li><a href="#">Implantology</a></li>
+                    <li><a href="#">Orthodontics</a></li>
+                    <li><a href="#">Pediatric Care</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Patient Resources</h4>
+                <ul>
+                    <li><a href="#">Patient Portal</a></li>
+                    <li><a href="#">Financing & Insurance</a></li>
+                    <li><a href="#">Post-Op Instructions</a></li>
+                    <li><a href="#">Travel Concierge</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>+1 (800) 555-0199</p>
+                <p>concierge@auradental.com</p>
+                <div class="social-icons mt-2">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom border-top">
+            <div class="container">
+                <p>&copy; 2026 Aura Dental Care. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Accessibility Statement</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
